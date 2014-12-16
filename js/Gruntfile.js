@@ -15,7 +15,7 @@ module.exports = function(grunt) {
 					install: true,
 					verbose: false,
 					cleanTargetDir: false,
-					cleanBowerDir: true,
+					cleanBowerDir: false,
 					bowerOptions: {}
 				}
 			}
@@ -68,5 +68,5 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-yuidoc');
 
 	// Default task(s).
-	grunt.registerTask('dev', ['bower', 'yuidoc', 'less']);
+	grunt.registerTask('dev', ['yuidoc', 'less']);
 };
